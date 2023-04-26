@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
-    
+    var currentQuestion = 0
+    var maxQuestion = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +37,19 @@ class ViewController: UIViewController {
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
         askQuestion()
+        
+        
     }
     
     func askQuestion(action: UIAlertAction! = nil) {
+        currentQuestion += 1
+        
+        if currentQuestion > maxQuestion {
+            showResult()
+            return
+        }
+        
+        
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         
@@ -46,27 +57,67 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = countries[correctAnswer].uppercased()
+        
+        
+        updateTitle()
+            
     }
  
+    func showResult() {
+        let ac = UIAlertController(title: "End of the game", message: "Questions asked: \(maxQuestion)\nFinal score: \(score)", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Restart game", style: .default, handler: askQuestion))
+        
+        score = 0
+        correctAnswer = 0
+        currentQuestion = 0
+        
+        present(ac, animated: true)
+        
+    }
+    
+    func updateTitle() {
+        title = "\(countries[correctAnswer].uppercased()) - \(currentQuestion)/\(maxQuestion)"
+    }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
+        var message: String
         
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            
+            
+            message = """
+            That's correct, Congratulations ✅
+            Score: \(score)
+            """
         } else {
             title = "Wrong"
             score -= 1
+            
+            
+            message = """
+                Wrong! ❌
+                You picked: \(countries[sender.tag].uppercased())
+                The correct answer was \(countries[correctAnswer].uppercased())
+                And was at the position #\(correctAnswer + 1)
+                Score: \(score)
+                """
+            
+            
+            
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
         
         present(ac, animated: true)
+        
+        
     }
+    
     
 }
 
