@@ -1,5 +1,5 @@
 # 100DaysOfSwift
-Repository for the course 100DaysOfSwift that teaches how to use UIkit!
+Repository for the course 100DaysOfSwift, in this course we use the framework UIKit. 
 
 Project 1 and 2 completeded 
 
