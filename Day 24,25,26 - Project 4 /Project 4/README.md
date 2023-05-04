@@ -2,7 +2,7 @@ Repository for the 4th project of the course 100DaysOfSwift.
 
 In this project i am creating an site using the framework WebKit.
 
-Just finished day 25. 
+Just started day 25. 
 
 
 ![image](https://user-images.githubusercontent.com/122572631/235954509-775c1065-a2ca-45de-941a-9be6e26adfe3.png)
