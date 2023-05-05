@@ -13,3 +13,4 @@ finished day 25.
 
 ![image](https://user-images.githubusercontent.com/122572631/235954302-cb5e3314-ced0-458d-9544-b586e51a184e.png)
 
+![image](https://user-images.githubusercontent.com/122572631/236493424-6160fd8b-8781-4d59-a876-d159879c0bde.png)
