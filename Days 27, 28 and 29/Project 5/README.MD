@@ -1,4 +1,4 @@
-Project 5 finalized with the challenge of day 29. 
+Project 5 finalized with the challenge of day 29. ✅
 
 First screen: 
 
