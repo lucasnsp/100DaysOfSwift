@@ -1,4 +1,4 @@
- Finished project 6b and completed the challenges: 
+ Finished project 6b and completed the challenges: ✅
  
  Try replacing the widthAnchor of our labels with leadingAnchor and trailingAnchor constraints, which more explicitly pin the label to the edges of its parent.
 Once you’ve completed the first challenge, try using the safeAreaLayoutGuide for those constraints. You can see if this is working by rotating to landscape, because the labels won’t go under the safe area.
