@@ -22,6 +22,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Petition"
+        
         guard let detailItem = detailItem else { return }
         
         let html = """
@@ -31,6 +33,7 @@ class DetailViewController: UIViewController {
         <style> body { font-size: 135%; } </style>
         <head>
         <body>
+        <h2>\(detailItem.title)</h2>
         \(detailItem.body)
         </body>
         <html>
