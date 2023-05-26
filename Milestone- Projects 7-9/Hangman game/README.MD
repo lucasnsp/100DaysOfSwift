@@ -1,4 +1,6 @@
-Project HAGNMAN completed. 
+Project HANGMAN completed. 
+
+The challenge proposed is in: https://www.hackingwithswift.com/guide/4/3/challenge
 
 ![image](https://github.com/lucasnsp/100DaysOfSwift/assets/122572631/4560cf04-38c0-44b6-aaef-51aa473c75f6)
 
