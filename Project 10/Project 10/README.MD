@@ -1,4 +1,4 @@
-Project 10 - part two completed. 
+Project 10 - part three completed. 
 
 ![image](https://github.com/lucasnsp/100DaysOfSwift/assets/122572631/aa65c735-fdc5-40c1-9096-8de6de08160e)
 
