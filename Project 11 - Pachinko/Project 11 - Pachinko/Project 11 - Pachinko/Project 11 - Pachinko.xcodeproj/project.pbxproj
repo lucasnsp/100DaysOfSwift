@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468E12822A2A2FDE00FB664F /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 468E12812A2A2FDE00FB664F /* FireParticles.sks */; };
 		469612082A27965200A6329E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469612072A27965200A6329E /* AppDelegate.swift */; };
 		4696120A2A27965300A6329E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 469612092A27965300A6329E /* GameScene.sks */; };
 		4696120E2A27965300A6329E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696120D2A27965300A6329E /* GameScene.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		468E12812A2A2FDE00FB664F /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
 		469612042A27965200A6329E /* Project 11 - Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 11 - Pachinko.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		469612072A27965200A6329E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469612092A27965300A6329E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				469612112A27965300A6329E /* Main.storyboard */,
 				469612142A27965400A6329E /* Assets.xcassets */,
 				469612162A27965400A6329E /* LaunchScreen.storyboard */,
+				468E12812A2A2FDE00FB664F /* FireParticles.sks */,
 			);
 			path = "Project 11 - Pachinko";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				469612132A27965300A6329E /* Main.storyboard in Resources */,
 				4696120A2A27965300A6329E /* GameScene.sks in Resources */,
+				468E12822A2A2FDE00FB664F /* FireParticles.sks in Resources */,
 				469612152A27965400A6329E /* Assets.xcassets in Resources */,
 				469612182A27965400A6329E /* LaunchScreen.storyboard in Resources */,
 			);
