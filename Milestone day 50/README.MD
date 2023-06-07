@@ -4,4 +4,4 @@ Your challenge is to put two different projects into one: I’d like you to let 
 
 This will require you to use the picker.sourceType = .camera setting for your image picker controller, create a custom type that stores a filename and a caption, then show the list of saved pictures in a table view. Remember: using the camera is only possible on a physical device.
 
-Still have problems i am working in that
+Still have problems i am working in that.
