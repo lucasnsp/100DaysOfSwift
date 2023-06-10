@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet var imageView: UIImageView!
-
+    @IBOutlet var filterButton: UIButton!
+    @IBOutlet var radius: UISlider!
+    
     @IBOutlet var intensity: UISlider!
     var currentImage: UIImage!
     
@@ -26,6 +28,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         context = CIContext()
         currentFilter = CIFilter(name: "CISepiaTone")
+        
+        filterButton.setTitle("Change Filter(CISepiaTone", for: .normal)
     
     }
     
@@ -74,14 +78,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let beginImage = CIImage(image: currentImage)
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
         
+        filterButton.setTitle("Change Filter (\(actionTitle))", for: .normal)
+        
         applyProcessing()
     }
     
     @IBAction func save(_ sender: Any) {
-        guard let image = imageView.image else { return }
-        
+        guard let image = imageView.image else {
+            let ac = UIAlertController(title: "Saved error", message: "There is no image to save", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+            return
+    }
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_: didFinishSavingWithError:contextInfo:)), nil)
     }
+    
+    
+    
+    @IBAction func radiusChange(_ sender: Any) {
+        applyProcessing()
+    }
+    
     
     @IBAction func intensityChanged(_ sender: Any) {
         applyProcessing()
@@ -92,6 +109,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         if inputKeys.contains(kCIInputIntensityKey) {
             currentFilter.setValue(intensity.value, forKey: kCIInputIntensityKey)
+        }
+        
+        if inputKeys.contains(kCIInputRadiusKey) {
+            currentFilter.setValue(radius.value * 200, forKey: kCIInputRadiusKey)
         }
         
         if inputKeys.contains(kCIInputRadiusKey) {
