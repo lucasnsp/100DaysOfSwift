@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463701612A4DC21600EBB4FC /* ExampleScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463701602A4DC21600EBB4FC /* ExampleScripts.swift */; };
 		46E6E5A02A4B474E000EDB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6E59F2A4B474E000EDB03 /* AppDelegate.swift */; };
 		46E6E5A22A4B474E000EDB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6E5A12A4B474E000EDB03 /* SceneDelegate.swift */; };
 		46E6E5A42A4B474E000EDB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6E5A32A4B474E000EDB03 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		463701602A4DC21600EBB4FC /* ExampleScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleScripts.swift; sourceTree = "<group>"; };
 		46E6E59C2A4B474E000EDB03 /* Project 19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E6E59F2A4B474E000EDB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E6E5A12A4B474E000EDB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				46E6E5BC2A4B4CF1000EDB03 /* Media.xcassets */,
 				46E6E5BE2A4B4CF1000EDB03 /* ActionViewController.swift */,
+				463701602A4DC21600EBB4FC /* ExampleScripts.swift */,
 				46E6E5C02A4B4CF1000EDB03 /* MainInterface.storyboard */,
 				46E6E5C32A4B4CF1000EDB03 /* Info.plist */,
 				46E6E5CB2A4B5E2A000EDB03 /* Action.js */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E6E5BF2A4B4CF1000EDB03 /* ActionViewController.swift in Sources */,
+				463701612A4DC21600EBB4FC /* ExampleScripts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
