@@ -1,13 +1,19 @@
 Project 20: 
 
-When Steve Jobs first announced the iPhone, he asked an important question: “how are we going to communicate with this?” His answer was as follows:
+## **Challenge**
 
-“We don’t want to carry around a mouse, right? So what are we going to do? Oh, a stylus, right? We’re going to use a stylus. No! Who wants a stylus? You have to get them and put them away, and you lose them – yuck. Nobody wants a stylus, so we’re not going to use a stylus. We’re going to use the best pointing device in the world. We’re going to use a pointing device we’re all born with, we’re born with ten of them – we’re going to use our fingers.”
+One of the best ways to learn is to write your own code as often as possible, so here are three ways you should try your new knowledge to make sure you fully understand what’s going on:
 
-It might sound odd today, but the idea of touching the screen with your fingers was pretty revolutionary back then, not least because most phone screens were small.
+For an easy challenge try adding a score label that updates as the player’s score changes.
 
-But these days – well over a decade after Jobs made that announcement – the feeling of manipulating apps by tapping your fingers on a thin layer of glass is still amazing, and the game we’re starting to build today is a good example of that.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/124abd42-cf94-42e0-aa7c-3509a79fe494/Untitled.png)
 
-In this game players will need to select and detonate groups of fireworks, which means tapping and swiping around the screen. You can try it in the simulator, of course, but it’s just not the same – if you’re able to use a real iPad for your tests please do!
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2aa0556d-c002-40e3-b811-37fe076bbb2d/Untitled.png)
 
-Today you have three topics to work through, and you’ll learn about UIBezierPath, SKAction.follow(), for case let, and more.
+Make the game end after a certain number of launches. You will need to use the **`invalidate()`** method of **`Timer`** to stop it from repeating.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aa9342ce-1bc9-4b73-9cb7-37d2cd221f05/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24e0002a-73cc-4f6f-88f7-54aac238412b/Untitled.png)
+
+Use the **`waitForDuration`** and **`removeFromParent`** actions in a sequence to make sure explosion particle emitters are removed from the game scene when they are finished.
