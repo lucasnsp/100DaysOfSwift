@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDU-py-jhO">
+                                <rect key="frame" x="100.66666666666669" y="402" width="192" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-CQ-Vkg">
+                                <rect key="frame" x="175.66666666666666" y="506" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6nm-ml-bqm">
+                                <rect key="frame" x="76" y="175" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kgi-CQ-Vkg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUT-ec-ftS"/>
+                            <constraint firstItem="CDU-py-jhO" firstAttribute="top" secondItem="6nm-ml-bqm" secondAttribute="bottom" constant="99" id="MoL-xX-eOE"/>
+                            <constraint firstItem="kgi-CQ-Vkg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mv3-UE-Ons"/>
+                            <constraint firstItem="6nm-ml-bqm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="OOe-Ji-HqK"/>
+                            <constraint firstItem="CDU-py-jhO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q04-Uv-Q3W"/>
+                            <constraint firstItem="6nm-ml-bqm" firstAttribute="centerX" secondItem="CDU-py-jhO" secondAttribute="centerX" id="T4O-VF-gH7"/>
+                            <constraint firstItem="6nm-ml-bqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="Ue4-oI-pPB"/>
+                            <constraint firstItem="CDU-py-jhO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vyx-yL-cSr"/>
+                            <constraint firstItem="kgi-CQ-Vkg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="90.5" id="vcQ-yQ-Pge"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleView" destination="6nm-ml-bqm" id="hBb-I4-5og"/>
+                        <outlet property="distanceReading" destination="CDU-py-jhO" id="7ip-Eu-KTW"/>
+                        <outlet property="nameLabel" destination="kgi-CQ-Vkg" id="3VR-Jc-r12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
