@@ -1,12 +1,12 @@
 Project 23
 
 
-Are you ready to start one of the longest projects in this series? I’m not trying to put you off, honest – in fact, if anything I think you’ll be inspired to continue once you see how good the finished product looks.
+This is a big project, right? Believe me, though: it is worth it – as Thomas Edison once said, “the most certain way to succeed is always to try just one more time.” So, even if you’re having a hard time I encourage you to stick with it – we’re finishing the project today, and I feel confident you’ll be impressed with the final game.
 
-Winston Churchill once said, “success is not final, failure is not fatal: it is the courage to continue that counts.” So, don’t worry if you’ve hit a few difficult patches in previous days because it’s perfectly natural and won’t hold you back from success today.
+What I think you’ll find is that the code we’re looking it isn’t particularly hard, it’s just that there’s a lot of it. But this is important: it gives you the chance to flex your GCD muscles in a different project, with different purposes, which helps make that knowledge sink in a little more.
 
-In this new project you’re going to get a chance to return to UIBezierPath, SKSpriteNode, physics, and more, but there’s also a lot new to learn. I hope you’re getting a sense of how my “three steps forward, one step back” approach works: we’re constantly learning new things, but also constantly bringing back older things to keep them fresh in your memory.
+You’re also going to meet CaseIterable for the first time, which is a bit like Codable – it’s one of Swift’s built-in protocols that makes the compiler generate some code on our behalf. In this instance, though, it’s designed to let us read all the cases of an enum as an array, and it’s useful so that we can make random enemy types in our game.
 
-When these 100 days finish (in just over 20 days from now!), I hope you’ll be so used to UIKit, SpriteKit, and more that you’ll be able to make something new without thinking twice.
+Today you have three topics to work through, and you’ll learn about CaseIterable, plus you’ll get more practice with GCD, SKTexture, and more.
 
-Today you have four topics to work through, and you’ll learn about SKShapeNode, touchesEnded(), AVAudioPlayer, and more.
+
