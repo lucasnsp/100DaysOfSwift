@@ -8,5 +8,3 @@ What I think you’ll find is that the code we’re looking it isn’t particula
 You’re also going to meet CaseIterable for the first time, which is a bit like Codable – it’s one of Swift’s built-in protocols that makes the compiler generate some code on our behalf. In this instance, though, it’s designed to let us read all the cases of an enum as an array, and it’s useful so that we can make random enemy types in our game.
 
 Today you have three topics to work through, and you’ll learn about CaseIterable, plus you’ll get more practice with GCD, SKTexture, and more.
-
-
