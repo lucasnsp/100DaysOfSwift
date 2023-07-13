@@ -6,5 +6,5 @@ As you’ll see, there’s more to strings than just being a sequence of charact
 
 Today you’re also going to learn an important skill that might cause you to go back and look through earlier projects for places you can use it: how to add formatting to your strings. This is done using a class called NSAttributedString, and although we’re only using it at an introductory level here as your skills progress you’ll learn how it can add images to strings – it’s really powerful!
 
-Today you have four topics to work through, and you’ll learn about string subscripts, contains(where:), NSAttributedString, and more.
+Today you have four topics to work through, and you’ll learn about string subscripts, contains(where:), NSAttributedString, and more
 
