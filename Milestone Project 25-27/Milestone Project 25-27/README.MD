@@ -16,4 +16,4 @@ Your UI can be pretty simple: a large image view, with three buttons below: Impo
 Both pieces of text can be read in using a UIAlertController with a text field inside.
 When rendering your finished image, make sure you draw your UIImage first, then add the text on top.
 NSAttributedString has keys to specify the stroke width and color of text, which would make it more readable – can you experiment to figure it out?
-OK, that’s enough hints – get coding!
+OK, that’s enough hints – get coding
