@@ -12,4 +12,4 @@ This playground requires you to see the output of your code using the playground
 
  
 
-If the top of your assistant editor says "Manual" you might find you see no output. For best reults it should say "Live View". Xcode often likes to switch to Manual all by itself, so please watch out for it!
+If the top of your assistant editor says "Manual" you might find you see no output. For best reults it should say "Live View". Xcode often likes to switch to Manual all by itself, so please watch out for it!.
