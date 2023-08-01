@@ -8,4 +8,4 @@ What’s more, I think the same is true of programming – today is day 95 of yo
 
 That’s another fantastic measure of how much progress you’ve made, and you’re not even done yet – keep going!
 
-Today you have two topics to work through, and you’ll learn how to make texture atlases, how to simplify collision detection, how to transition between scenes, and more.
+Today you have two topics to work through, and you’ll learn how to make texture atlases, how to simplify collision detection, how to transition between scenes, and more
