@@ -12,18 +12,54 @@ import GameplayKit
 class GameViewController: UIViewController {
     var currentGame: GameScene?
     
-    @IBOutlet var angleSlider: UISlider!
-    @IBOutlet var angleLabel: UILabel!
+    @IBOutlet weak var angleSlider: UISlider!
+    @IBOutlet weak var angleLabel: UILabel!
     
-    @IBOutlet var velocitySlider: UISlider!
-    @IBOutlet var velocityLabel: UILabel!
+    @IBOutlet weak var velocitySlider: UISlider!
+    @IBOutlet weak var velocityLabel: UILabel!
     
-    @IBOutlet var launchButton: UIButton!
-    @IBOutlet var playerNumber: UILabel!
+    @IBOutlet weak var launchButton: UIButton!
+    @IBOutlet weak var playerNumber: UILabel!
+    @IBOutlet weak var player1ScoreLabel: UILabel!
+    @IBOutlet weak var player2ScoreLabel: UILabel!
+    @IBOutlet weak var newGameButton: UIButton!
+    
+    
+    var player1Score: Int = 0 {
+            didSet {
+                player1ScoreLabel.text = "Score: \(player1Score)"
+            }
+        }
+        var player2Score: Int = 0 {
+            didSet {
+                player2ScoreLabel.text = "Score: \(player2Score)"
+            }
+        }
+        
+        var gameStopped = false {
+            didSet {
+                newGameButton.isHidden = !gameStopped
+            }
+        }
+    
+    @IBOutlet weak var player1Wind: UILabel!
+    @IBOutlet weak var player2Wind: UILabel!
+    var wind: Wind!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        gameStopped = false
+        player1Score = 0
+        player2Score = 0
+
+                
+        wind = Wind.getRandomWind()
+        player1Wind.attributedText = wind.getText()
+        player1Wind.isHidden = false
+        player2Wind.isHidden = true
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -46,6 +82,10 @@ class GameViewController: UIViewController {
         
         angleChanged(self)
         velocityChanged(self)
+    }
+    
+    override var shouldAutorotate: Bool {
+        return true
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -81,10 +121,19 @@ class GameViewController: UIViewController {
     }
     
     func activatePlayer(number: Int) {
+        wind = Wind.getRandomWind()
+        
         if number == 1 {
             playerNumber.text = "<<< PLAYER ONE"
+            
+            player1Wind.attributedText = wind.getText()
+            player1Wind.isHidden = false
+            player2Wind.isHidden = true
         } else {
             playerNumber.text = "PLAYER TWO >>>"
+            player2Wind.attributedText = wind.getText()
+            player2Wind.isHidden = false
+            player1Wind.isHidden = true
         }
         
         angleSlider.isHidden = false
@@ -94,6 +143,44 @@ class GameViewController: UIViewController {
         velocitySlider.isHidden = false
         
         launchButton.isHidden = false
+    }
+    
+    func gameControls(isHidden: Bool) {
+        angleSlider.isHidden = isHidden
+        angleLabel.isHidden = isHidden
+        
+        velocityLabel.isHidden = isHidden
+        velocitySlider.isHidden = isHidden
+        
+        launchButton.isHidden = isHidden
+    }
+    
+    func playerScored(player: Int) {
+        if player == 1 {
+            player1Score += 1
+        } else {
+            player2Score += 1
+        }
+        
+        if player1Score == 3 {
+            playerNumber.text = "PlAYER 1 WINS"
+            stopGame()
+        } else if player2Score == 3 {
+            playerNumber.text = "PLAYER 2 WINS"
+            stopGame()
+        }
+    }
+    
+    func stopGame() {
+        gameControls(isHidden: true)
+        gameStopped = true
+    }
+    
+    @IBAction func newGameAction(_ sender: Any) {
+        gameStopped = false
+        player1Score = 0
+        player2Score = 0
+        currentGame?.newGame()
     }
     
 }
