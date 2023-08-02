@@ -1,4 +1,4 @@
-Project 29, part two
+Project 29, part three
 
 Today we’ll be completing our SpriteKit game, and I think you’ll be pleased by the end result. However to get to the end we’ll need to do a little mathematics: we need to convert between degrees and radians, and we need to calculator a vector from an angle and a speed.
 
