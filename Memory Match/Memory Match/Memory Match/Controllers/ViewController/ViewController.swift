@@ -81,8 +81,8 @@ class ViewController: UIViewController {
          }
          
        private func presentAlert(){
-           let alertController = UIAlertController(title: "Complete!", message: "Ready for another?", preferredStyle: .alert)
-           alertController.addAction(UIAlertAction(title: "Reset", style: .default, handler: { [weak self] (_) in
+           let alertController = UIAlertController(title: "Congratulations 🥹 ", message: "Ready for another?", preferredStyle: .alert)
+           alertController.addAction(UIAlertAction(title: "Start Over", style: .default, handler: { [weak self] (_) in
                self?.cards.removeAll()
                self?.flips = 0
                self?.fetchCards()
@@ -93,6 +93,10 @@ class ViewController: UIViewController {
        }
        
        @IBAction func newGameButtonTapped(_ sender: Any) {
+           let ac = UIAlertController(title: "Problems with your memory?", message: "Memory loss in young adults is almost always a direct result of an unhealthy lifestyle that includes a lack of sleep, excess stress, a poor diet, and recreational substance use.", preferredStyle: .alert)
+           ac.addAction(UIAlertAction(title: "Play NEW GAME", style: .default))
+           present(ac, animated: true)
+           
            cards.removeAll()
            flips = 0
            fetchCards()

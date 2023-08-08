@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7hy-iA-K5z">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7Op-DP-ylj">
+            <objects>
+                <viewController id="7hy-iA-K5z" customClass="ViewController" customModule="Memory_Match" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jng-4n-EfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="enm-dY-J07">
+                                <rect key="frame" x="20" y="113.5" width="984" height="634.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FPT-2x-eLO">
+                                    <size key="itemSize" width="250" height="300"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="Wea-cO-KAG" customClass="CardCollectionViewCell" customModule="Memory_Match" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20" width="250" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cMN-oY-Qvu">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="QzC-rY-kwm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8g-oB-qdE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-SA-Pyg">
+                                                            <rect key="frame" x="88" y="110" width="80" height="86.5"/>
+                                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="Vea-SA-Pyg" secondAttribute="height" multiplier="1:1" constant="-2" id="W6w-uZ-NCy"/>
+                                                            </constraints>
+                                                            <imageReference key="image" image="questionmark" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
+                                                                <hierarchicalColors>
+                                                                    <color red="1" green="0.073311755919999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color red="0.99843797089999997" green="1" blue="0.92002686469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <color systemColor="systemRedColor"/>
+                                                                </hierarchicalColors>
+                                                            </imageReference>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.2794565826" green="0.32318126619999998" blue="0.4222974417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Vea-SA-Pyg" firstAttribute="leading" secondItem="T8g-oB-qdE" secondAttribute="leading" constant="88" id="6dr-nJ-iY5"/>
+                                                        <constraint firstItem="Vea-SA-Pyg" firstAttribute="width" secondItem="T8g-oB-qdE" secondAttribute="width" multiplier="0.3" constant="5" id="Cgn-xx-nZr"/>
+                                                        <constraint firstItem="Vea-SA-Pyg" firstAttribute="top" secondItem="T8g-oB-qdE" secondAttribute="top" constant="112" id="OOj-N1-hoP"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T8g-oB-qdE" firstAttribute="top" secondItem="cMN-oY-Qvu" secondAttribute="top" id="12V-Da-R9g"/>
+                                                <constraint firstItem="QzC-rY-kwm" firstAttribute="top" secondItem="cMN-oY-Qvu" secondAttribute="top" id="I21-yC-Vz9"/>
+                                                <constraint firstAttribute="trailing" secondItem="QzC-rY-kwm" secondAttribute="trailing" id="Kg8-Hx-U5g"/>
+                                                <constraint firstItem="QzC-rY-kwm" firstAttribute="leading" secondItem="cMN-oY-Qvu" secondAttribute="leading" id="RoD-Ja-Jfw"/>
+                                                <constraint firstAttribute="bottom" secondItem="QzC-rY-kwm" secondAttribute="bottom" id="nqW-XP-9zr"/>
+                                                <constraint firstAttribute="trailing" secondItem="T8g-oB-qdE" secondAttribute="trailing" id="pOa-n1-DXF"/>
+                                                <constraint firstItem="T8g-oB-qdE" firstAttribute="leading" secondItem="cMN-oY-Qvu" secondAttribute="leading" id="uTc-cJ-6Z9"/>
+                                                <constraint firstAttribute="bottom" secondItem="T8g-oB-qdE" secondAttribute="bottom" id="zdz-XE-I7g"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="backCardView" destination="T8g-oB-qdE" id="txl-oc-juP"/>
+                                            <outlet property="frontCardView" destination="QzC-rY-kwm" id="cc0-hh-vkl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhR-AP-jzg">
+                                <rect key="frame" x="861" y="50" width="143" height="47"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="NEW GAME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGameButtonTapped:" destination="7hy-iA-K5z" eventType="touchUpInside" id="PQf-h4-3Uy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIPS: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc7-AB-sv6">
+                                <rect key="frame" x="20" y="50" width="97" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMORY MATCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-sR-TeJ">
+                                <rect key="frame" x="405" y="50" width="214" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.073311755916592225" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YGn-me-25x"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="enm-dY-J07" firstAttribute="top" secondItem="pc7-AB-sv6" secondAttribute="bottom" constant="29" id="0c1-FS-Izd"/>
+                            <constraint firstItem="YGn-me-25x" firstAttribute="bottom" secondItem="enm-dY-J07" secondAttribute="bottom" constant="20" id="0cG-eA-hWR"/>
+                            <constraint firstItem="enm-dY-J07" firstAttribute="leading" secondItem="YGn-me-25x" secondAttribute="leading" constant="20" id="9b7-pQ-X9V"/>
+                            <constraint firstItem="enm-dY-J07" firstAttribute="centerX" secondItem="Jng-4n-EfZ" secondAttribute="centerX" id="BY6-tp-qRj"/>
+                            <constraint firstItem="pc7-AB-sv6" firstAttribute="top" secondItem="YGn-me-25x" secondAttribute="top" constant="30" id="Eys-7q-gV1"/>
+                            <constraint firstItem="pc7-AB-sv6" firstAttribute="leading" secondItem="enm-dY-J07" secondAttribute="leading" id="Hyn-Ba-Vx8"/>
+                            <constraint firstItem="yhR-AP-jzg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pc7-AB-sv6" secondAttribute="trailing" constant="8" symbolic="YES" id="LVZ-YE-fdY"/>
+                            <constraint firstItem="yhR-AP-jzg" firstAttribute="trailing" secondItem="enm-dY-J07" secondAttribute="trailing" id="Lxt-l7-odK"/>
+                            <constraint firstItem="DtZ-sR-TeJ" firstAttribute="centerX" secondItem="Jng-4n-EfZ" secondAttribute="centerX" id="YAn-ej-gjH"/>
+                            <constraint firstItem="DtZ-sR-TeJ" firstAttribute="top" secondItem="YGn-me-25x" secondAttribute="top" constant="30" id="YR7-Vq-fAj"/>
+                            <constraint firstItem="yhR-AP-jzg" firstAttribute="top" secondItem="YGn-me-25x" secondAttribute="top" constant="30" id="rHm-YN-SRh"/>
+                            <constraint firstItem="YGn-me-25x" firstAttribute="trailing" secondItem="enm-dY-J07" secondAttribute="trailing" constant="20" id="yV8-HZ-CJI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="enm-dY-J07" id="bKE-hp-a1w"/>
+                        <outlet property="flipsLabel" destination="pc7-AB-sv6" id="NXK-Qq-58b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hzd-jI-k4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867.7734375" y="-572.65625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card1" width="125" height="125"/>
+        <image name="questionmark" catalog="system" width="94" height="128"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
