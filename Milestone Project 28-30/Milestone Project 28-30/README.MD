@@ -14,7 +14,7 @@ Don’t under-estimate this challenge! To make it work you’re going to need to
 
 If you’re looking for a more advanced challenge, go for a variant of the game that uses word pairs and add a parental option that lets them create new cards. This would mean:
 
-Authenticating users using Touch ID or Face ID.
+Authenticating users using Touch ID or Face ID.,
 Showing a new view controller that lists all existing cards and lets them enter a new card.
 You can use a UIAlertController with one or two text fields for your card entry, depending on what kind of game you’ve made.
 Please go ahead and try to solve the challenge now. My hints are below, but please try to avoid reading them unless you’re really struggling.
