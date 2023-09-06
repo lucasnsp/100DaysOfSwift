@@ -1,6 +1,6 @@
 Core Grapichs Redux 
 
-Learn Core Graphics
+Learn Core Graphics.
 
 Created by Paul Hudson – Hacking with Swift
 
