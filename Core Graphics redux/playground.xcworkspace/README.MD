@@ -2,7 +2,7 @@ Core Grapichs Redux
 
 Learn Core Graphics
 
-Created by Paul Hudson – Hacking with Swift.
+Created by Paul Hudson – Hacking with Swift
 
 This playground is designed to introduce you to a wide variety of Core Graphics concepts in a hands-on way.
 
