@@ -1,4 +1,4 @@
-Core Grapichs Redux 
+Core Grapichs Redux .
 
 Learn Core Graphics
 
